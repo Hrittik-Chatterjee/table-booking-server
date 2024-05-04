@@ -14,7 +14,7 @@ dotenv.config();
 //   "mongodb+srv://table_booking:i9Gp7lKzGCIXPaDC@table-booking.qj3inpm.mongodb.net/?retryWrites=true&w=majority&appName=table-booking";
 
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@table-booking.qj3inpm.mongodb.net/?retryWrites=true&w=majority&appName=table-booking?directConnection=true`;
-
+console.log(process.env.DB_USER);
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
   serverApi: {
